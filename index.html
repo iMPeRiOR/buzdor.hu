@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/splide.min.css">
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
@@ -19,12 +20,41 @@
           <h1>
             Art. Nude. Photography.
           </h1>
-          <p>
-            <span style="color:yellow">Please find my photos on my social media links below<br /></span>
-            Fotóim az alábbi közösségi felületeimen találhatóak
-          </p>
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="images/carousel1.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel2.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel3.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel4.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel5.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel6.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel7.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel8.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel9.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel10.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel11.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel12.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel13.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel14.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel15.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel16.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel17.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel18.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel19.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel20.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel21.jpg"></li>
+                <li class="splide__slide"><img src="images/carousel22.jpg"></li>
+              </ul>
+            </div>
+          </section>
+          
         </div>
+        
       </div>
+      <p>
+        <span style="color:yellow">My photos on social media<br></span>Fotók közösségi felületeimen
+      </p>
       <nav>
         <ul>
           <li>
@@ -108,7 +138,7 @@
           </tr>
           <tr>
             <td>Teljes bőr- és alakretus</td>
-            <td colspan="3">2.000 HUF / fotó</td>
+            <td colspan="3">3.000 HUF / fotó</td>
           </tr>
           <tr>
             <td>Csomagár</td>
@@ -239,6 +269,19 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/splide.min.js"></script>
+  <script>
+    new Splide( '.splide', {
+      rewind: true,
+      speed: 5000,
+      width: '800px',
+      height: '300px',
+      fixedHeight: '300px',
+      autoWidth: true,
+      autoplay: true,
+      interval: 3000,
+    }).mount()
+  </script>
 
 </body>
 

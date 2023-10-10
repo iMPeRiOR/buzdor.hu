@@ -192,7 +192,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.25rem;
+		font-size: 2rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
 	}
@@ -1261,7 +1261,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 2rem;
 		}
 
 			#header > *:before {
@@ -1311,7 +1311,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 2rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1320,7 +1320,7 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-			#header .content p {
+			#header p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
