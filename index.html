@@ -224,6 +224,19 @@
         </p>
 
       </article>
+      <article class="ageBox">
+    <div class="box-right">
+      <h3>Felnőtt tartalom - Adult content</h3>
+      <p>Csak akkor kattints az enter gombra, ha már elmúltál 18 éves!<br>By clicking enter, I certify that I am over 18 and will comply with the above statement.</p>
+      
+      <a href="#" class="btn btn-alpha"  id="refresh-page">ENTER</a>
+      
+      <p class="decor-line"><span>Or</span></p>
+      
+      <a href="https://minecraft.net" class="btn btn-beta" id="reset-session">EXIT</a>
+    </div>
+    </div>
+  </article>
     </div>
     <footer id="footer">
       <p class="copyright">2024 &copy; [ buzdor.hu ] photography</p>
@@ -235,7 +248,27 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    jQuery(document).ready(function($){
 
+if (sessionStorage.getItem('advertOnce') !== 'true') {
+  $('.ageBox').show();
+}else{
+  $('.ageBox').show();
+}
+ 
+$('#refresh-page').on('click',function(){
+$('.ageBox').hide();
+sessionStorage.setItem('advertOnce','true');
+});
+  
+$('#reset-session').on('click',function(){
+$('.ageBox').show();
+sessionStorage.setItem('advertOnce','');
+});
+ 
+});
+  </script>
 </body>
 
 </html>
