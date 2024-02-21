@@ -1,36 +1,4 @@
 @import "bourbon";
-
-/*----------------------------------------------   
--Defualt to border-box
------------------------------------------------  */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box; 
-}
-html, body{
-  
-}
-/*----------------------------------------------   
---Fluid body sizing
------------------------------------------------  */
-body {
-font-size: 100%;
-  
-  @media (min-width: 32em) {
-    font-size: 110%
-  }
-  @media (min-width: 54em) {
-    font-size: 111%
-  }
-  @media (min-width: 74em) {
-    font-size: 115%
-  }
-
-  @media (min-width: 96em) {
-    font-size: 135%
-  }
-}
 a.btn{
   background-color: #54A984;
   color: #fff;
